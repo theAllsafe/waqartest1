@@ -1,0 +1,50 @@
+[25-Aug-2021 07:08:25 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Partner\PartnerController as PartnerController because the name is already in use in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/routes/web.php on line 8
+[26-Aug-2021 04:57:58 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:258
+Stack trace:
+#0 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(584): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(565): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(476): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(S in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 258
+[26-Aug-2021 04:58:04 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:258
+Stack trace:
+#0 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(584): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(565): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(476): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(S in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 258
+[26-Aug-2021 04:59:38 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:258
+Stack trace:
+#0 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(584): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(565): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(476): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(S in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 258
+[27-Aug-2021 04:18:07 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Partner\SessionController::destroy() in /home3/scsyin/public_html/schoolbuddy/uncatadmin/app/Http/Controllers/Partner/SessionController.php on line 127
+[27-Aug-2021 04:19:07 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Partner\SessionController::destroy() in /home3/scsyin/public_html/schoolbuddy/uncatadmin/app/Http/Controllers/Partner/SessionController.php on line 127
+[07-Sep-2021 15:18:26 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Validator as Validator because the name is already in use in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 13
+[07-Sep-2021 15:20:23 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Sep-2021 15:21:37 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Sep-2021 15:23:58 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Sep-2021 15:25:34 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Sep-2021 15:25:43 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Sep-2021 16:55:39 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 146
+[07-Sep-2021 16:55:55 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 146
+[07-Sep-2021 16:57:43 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 146
+[07-Sep-2021 16:58:52 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 146
+[07-Sep-2021 17:47:47 UTC] PHP Fatal error:  Trait 'Laravel\Passport\HasApiTokens' not found in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Models/User.php on line 12
+[29-Sep-2021 08:36:05 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[29-Sep-2021 08:36:37 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[29-Sep-2021 08:36:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[29-Sep-2021 08:37:07 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[29-Sep-2021 10:36:18 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Partner/StudentRegisterController.php on line 245
+[29-Sep-2021 10:41:57 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Partner/StudentRegisterController.php on line 245
+[29-Sep-2021 11:18:12 UTC] PHP Fatal error:  Declaration of App\UsersImport::model(array $request, $id) must be compatible with Maatwebsite\Excel\Concerns\ToModel::model(array $row) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/UsersImport.php on line 18
+[02-Oct-2021 11:05:19 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Validator as Validator because the name is already in use in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/ForgotPasswordController.php on line 13
+[03-Oct-2021 11:40:35 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[03-Oct-2021 11:40:36 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[03-Oct-2021 11:41:07 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[03-Oct-2021 11:41:07 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[03-Oct-2021 14:05:38 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[06-Oct-2021 10:59:45 UTC] PHP Fatal error:  Redefinition of parameter $index in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Api/AuthController.php on line 143
+[07-Oct-2021 01:43:14 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
+[07-Oct-2021 08:21:25 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[07-Oct-2021 08:24:43 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home3/scsyin/public_html/schoolbuddy/schoolbuddy/app/Http/Controllers/Admin/PartnerController.php on line 190
+[09-Oct-2021 18:09:57 UTC] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0

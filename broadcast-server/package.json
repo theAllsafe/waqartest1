@@ -1,0 +1,25 @@
+{
+  "name": "broadcast-server",
+  "version": "0.1.0",
+  "description": "Janeous",
+  "license": "ISC",
+  "author": "",
+  "main": "broadcast-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "dotenv": "^6.0.0",
+    "firebase": "^5.5.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "ioredis": "^4.27.8",
+    "redis": "^2.8.0",
+    "socket.io": "^2.2.0",
+    "socket.io-redis": "^5.4.0",
+    "util": "^0.11.0"
+  }
+}

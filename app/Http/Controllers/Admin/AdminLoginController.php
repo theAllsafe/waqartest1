@@ -1,0 +1,121 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+use Auth;
+use Hash;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\User;
+
+class AdminLoginController extends Controller
+{
+    public function login(Request $request)
+    {
+        //     'password' => Hash::make('admin@123')
+        return view('admin.login');
+    }
+    public function makelogin(Request $request)
+    {
+        $credentials = [
+            'email' => $request['email'],
+            'password' => $request['password'],
+            'login_status' => '1',
+            'role' => '1',
+        ];
+
+        if(Auth::attempt($credentials)) {
+            $value = $request->session()->get('key', $credentials);
+            return redirect()->route('admin.dashboard');       
+        }
+
+        return redirect('login')->with('error', 'Oppes! You have entered invalid credentials');
+    }
+
+    // ------------------ [ User Dashboard Section ] ---------------------
+    public function dashboard() {
+
+        // check if user logged in
+        if(Auth::check()) {
+            $users = User::where('role',3)->get();
+            $tusers = User::where('role',2)->get();
+            return view('admin.dashboard')->with(['users'=>$users,'tusers'=>$tusers]);
+        }
+
+        return redirect('login')->with('error', 'Oopps! You do not have access');
+    }
+    
+    public function profile() 
+    {
+        if(Auth::check()) {
+            return view('admin.profile');
+        }
+        return redirect('login')->with('error', 'Oopps! You do not have access');
+    }
+    
+    public function updateprofile(Request $request) 
+    {
+        if(Auth::check())
+        {
+	        if($request->hasfile('image'))
+	        {
+	            $file=$request->file('image');
+	            $extension=$file->getClientOriginalExtension();
+	            $filename=time().'.'.$extension;
+	            $file->move('admin_assets/upload',$filename);
+	            $data['image']=$filename;
+	        }
+        	$data['name'] = $request->name;
+        	$data['email'] = $request->email;
+        	if( User::where('id', Auth::user()->id)->update( $data ))
+        	{
+			return back()->with('status','Profile update successfully');
+		}
+		return back()->with('status','Not update profile');
+        }
+        return redirect('login')->with('error', 'Oopps! You do not have access');
+    }
+    
+    public function changepassword(Request $request) 
+    {
+        if(Auth::check())
+        {        	
+            $password=Auth::user()->password;
+            // $old_password = Hash::check('admin@123');
+            // dd($password.$old_password);
+        	$new_password = $request->new_password;
+        	$confirm_password = $request->confirm_password;
+        	if((Hash::check($request->post('old_password'), Auth::user()->password)))
+        	{
+        	    if($new_password==$confirm_password)
+            	{
+                	$data['password']=Hash::make($new_password);
+            	    if( User::where('id', Auth::user()->id)->update( $data ))
+                	{
+                	    $data['password']=Hash::make($new_password);
+            			return back()->with('change_password_status','Password update successfully');
+            		}
+            	}
+            	else
+            	{
+            	    return back()->with('change_password_status','New & Confirm Password not match');
+            	}
+        	}
+        	else
+        	{
+        	    return back()->with('change_password_status','Old Password not match');
+        	}
+        	
+		return back()->with('status','Not update profile');
+        }
+        return redirect('login')->with('error', 'Oopps! You do not have access');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+  
+        return redirect('login')->with('error', 'You logout');
+    
+    }
+  
+}
